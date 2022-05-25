@@ -15,7 +15,7 @@ public class Car {
   }
 
   public void brake(){
-    System.out.println("Breaking");
+    System.out.println("Braking");
   }
 
   public void reverse(){

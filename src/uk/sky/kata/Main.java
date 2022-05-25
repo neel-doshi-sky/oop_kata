@@ -1,12 +1,13 @@
 package uk.sky.kata;
 
+import uk.sky.kata.abstraction.Circle;
+import uk.sky.kata.abstraction.Square;
 import uk.sky.kata.abstraction.intefaces.BankAccountService;
 import uk.sky.kata.abstraction.intefaces.BankService;
-import uk.sky.kata.abstraction.Circle;
 import uk.sky.kata.abstraction.intefaces.NewBankService;
-import uk.sky.kata.abstraction.Square;
 import uk.sky.kata.encapsulation.EmployeeEncapsulated;
 import uk.sky.kata.encapsulation.EmployeeWithoutEncapsulation;
+import uk.sky.kata.exampleProject.CarDealershipApp;
 import uk.sky.kata.inheritance.AutomaticCar;
 import uk.sky.kata.inheritance.Car;
 import uk.sky.kata.inheritance.ManualCar;
@@ -15,6 +16,7 @@ import uk.sky.kata.polymorphism.Calculator;
 public class Main {
 
     public static void main(String[] args) {
+
         //Encapsulation
         //No Encapsulation example, notice how without encapsulation, we have access to everything in this class and make changes to what we want, we are not restricted
         EmployeeWithoutEncapsulation employeeWithoutEncapsulation =
@@ -23,13 +25,17 @@ public class Main {
         employeeWithoutEncapsulation.salary = 500000d;
         System.out.println(employeeWithoutEncapsulation.salary);
 
-        //Encapsulated example
-        //Notice how we cannot access salary to modify because we have not provided a setter, this means we are safe from anyone changing the salary after creating the object
-        //if we want to allow access to change the salary, we can add a setter
+        /**
+         * Encapsulated example
+         * Notice how we cannot access salary to modify because we have not provided a setter, this means we are safe from anyone changing the salary after creating the object
+         * if we want to allow access to change the salary, we can add a setter
+         */
+
         EmployeeEncapsulated employeeEncapsulated =
             new EmployeeEncapsulated("Neel", "Doshi", 100000D, "123A", 2);
+        //System.out.println(employeeEncapsulated.salary);
         System.out.println(employeeEncapsulated.getSalary());
-        //employeeEncapsulated.setSalary(50000d);
+//        employeeEncapsulated.setSalary(50000d);
         //employeeEncapsulated.salary = 4000d;
 
 
@@ -80,13 +86,23 @@ public class Main {
         bankAccountService.openAccount();
         bankAccountService.deposit();
 
-        //Polymorphism - means having many forms
-        //First example is inheritance, we have many startEngine() methods which are overridden, this is a run time example of polymorphism
-        //Second example is overloading methods at compile time
+        /**
+         * Polymorphism - means having many forms
+         * First example is inheritance, we have many startEngine() methods which are overridden, this is a run time example of polymorphism
+         * Second example is overloading methods at compile time
+         */
+
         Calculator calculator = new Calculator();
         System.out.println(calculator.add(1, 2));
         //notice that the method name is the same, this makes it easy for consumers to read the code and understand that it is another form of add
         System.out.println(calculator.add(1.5d, 2.5d));
         System.out.println(calculator.add(1, 4, 6));
+
+        /**
+         * Now here is an example project that uses what we learnt above in a real app scenario
+         */
+        CarDealershipApp carDealershipApp = new CarDealershipApp();
+        carDealershipApp.run();
+
     }
 }

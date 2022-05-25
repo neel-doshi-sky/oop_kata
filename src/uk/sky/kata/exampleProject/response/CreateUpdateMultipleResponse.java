@@ -7,15 +7,16 @@ import uk.sky.kata.exampleProject.model.Car;
 /**
  * As this class extends ResponseBase, it inherits all the methods and properties and has access to it as well
  */
-public class ListResponse extends ResponseBase{
-  private List<Car> carList = new ArrayList<>();
+public class CreateUpdateMultipleResponse extends ResponseBase {
 
-  public List<Car> getCarList() {
-    return carList;
+  List<Car> carsUpdatedList = new ArrayList<>();
+
+  public List<Car> getCarsUpdatedList() {
+    return carsUpdatedList;
   }
 
-  public void setCarList(List<Car> carList) {
-    this.carList = carList;
+  public void setCarsUpdatedList(List<Car> carsUpdatedList) {
+    this.carsUpdatedList = carsUpdatedList;
   }
 
   /**
@@ -26,6 +27,7 @@ public class ListResponse extends ResponseBase{
   @Override
   public String toString() {
     return
-        super.toString() + " carList= " + carList;
+        super.toString() +
+            " carsCreatedList= " + carsUpdatedList;
   }
 }

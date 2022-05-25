@@ -19,4 +19,11 @@ public class ResponseBase {
   public void setMessages(String messages) {
     this.messages = messages;
   }
+
+  @Override
+  public String toString() {
+    return
+        "errors='" + errors + '\'' +
+        ", messages='" + messages + '\'';
+  }
 }
