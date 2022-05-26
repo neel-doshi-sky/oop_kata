@@ -1,6 +1,7 @@
 package uk.sky.kata.exampleProject.response;
 
 public class ResponseBase {
+
   private String errors;
   private String messages;
 
