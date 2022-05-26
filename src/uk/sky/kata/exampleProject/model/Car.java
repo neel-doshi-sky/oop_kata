@@ -13,7 +13,7 @@ public class Car {
    * in this constructor, we generate an id, this code gets executed everytime an object is created
    */
   public Car(String brand, String model) {
-    id = UUID.randomUUID().toString();
+    this.id = UUID.randomUUID().toString();
     this.brand = brand;
     this.model = model;
   }
@@ -39,7 +39,7 @@ public class Car {
    * This is an example of encapsulation as we are restricting access to this variable by making it private and only accessible via a getter
    */
   public String getId() {
-    return id;
+    return this.id;
   }
 
   @Override
