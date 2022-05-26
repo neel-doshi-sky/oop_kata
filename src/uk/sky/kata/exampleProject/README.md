@@ -1,6 +1,6 @@
-OOP Fundamentals Task
+**OOP Fundamentals Task**
 
-Objective: Create an application that can perform actions on a car 'database' using the OOP fundamentals we have just learnt!
+**Objective: Create an application that can perform actions on a car 'database' using the OOP fundamentals we have just learnt!**
 
 The actions that need to be performed are stated below:
 1) create - add a car to the 'database'
