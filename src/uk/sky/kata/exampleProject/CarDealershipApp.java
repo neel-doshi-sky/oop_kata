@@ -46,7 +46,7 @@ public class CarDealershipApp {
     //Now lets use the other delete method to delete another car by id, this is another example of polymorphism as the method is overloaded meaning it has the same name but different signature/return type
     System.out.println(carService.delete(car3.getId(), carList).toString());
 
-    //Notice how all of the responses we got back had a property called errors and messages? Well if you look at the code, you can see that this is because it extends the ResponseBase class which contains these fields
+    //Notice how all the responses we got back had a property called errors and messages? Well if you look at the code, you can see that this is because it extends the ResponseBase class which contains these fields
     //We did this because all responses need errors and messages, but not all response needed to return car, so by extending this base class, we are able to create unique responses without repeating the same things
     //This is an example of inheritance
   }
