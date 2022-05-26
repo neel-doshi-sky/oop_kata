@@ -98,11 +98,5 @@ public class Main {
         System.out.println(calculator.add(1.5d, 2.5d));
         System.out.println(calculator.add(1, 4, 6));
 
-        /**
-         * Now here is an example project that uses what we learnt above in a real app scenario
-         */
-        CarDealershipApp carDealershipApp = new CarDealershipApp();
-        carDealershipApp.run();
-
     }
 }

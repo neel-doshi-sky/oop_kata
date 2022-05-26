@@ -8,18 +8,20 @@ import uk.sky.kata.exampleProject.service.impl.CarServiceImpl;
 
 public class CarDealershipApp {
 
-  /**
-   * Notice here, you can create an object of an interface if you equal it to a class that overrides it
-   * The car service interface is a great example of abstraction, as it tells us what our car service does
-   * without telling us how, making it readable and reusable
-   */
-  CarService carService = new CarServiceImpl();
 
-  //This will be our car database
-  List<Car> carList = new ArrayList<>();
+  public static void main(String[] args) {
+
+    /**
+     * Notice here, you can create an object of an interface if you equal it to a class that overrides it
+     * The car service interface is a great example of abstraction, as it tells us what our car service does
+     * without telling us how, making it readable and reusable
+     */
+    CarService carService = new CarServiceImpl();
+
+    //This will be our car database
+    List<Car> carList = new ArrayList<>();
 
 
-  public void run() {
     System.out.println("OOP Example App");
 
     //Lets start by adding a car to the list above by creating a new car object
