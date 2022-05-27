@@ -1,16 +1,16 @@
 package uk.sky.kata;
 
-import uk.sky.kata.abstraction.Circle;
-import uk.sky.kata.abstraction.Square;
-import uk.sky.kata.abstraction.interfaces.BankAccountService;
-import uk.sky.kata.abstraction.interfaces.BankService;
-import uk.sky.kata.abstraction.interfaces.NewBankService;
-import uk.sky.kata.encapsulation.EmployeeEncapsulated;
-import uk.sky.kata.encapsulation.EmployeeWithoutEncapsulation;
-import uk.sky.kata.inheritance.AutomaticCar;
-import uk.sky.kata.inheritance.Car;
-import uk.sky.kata.inheritance.ManualCar;
-import uk.sky.kata.polymorphism.Calculator;
+import uk.sky.kata.fundamentals.abstraction.Circle;
+import uk.sky.kata.fundamentals.abstraction.Square;
+import uk.sky.kata.fundamentals.abstraction.interfaces.BankAccountService;
+import uk.sky.kata.fundamentals.abstraction.interfaces.BankService;
+import uk.sky.kata.fundamentals.abstraction.interfaces.NewBankService;
+import uk.sky.kata.fundamentals.encapsulation.EmployeeEncapsulated;
+import uk.sky.kata.fundamentals.encapsulation.EmployeeWithoutEncapsulation;
+import uk.sky.kata.fundamentals.inheritance.AutomaticCar;
+import uk.sky.kata.fundamentals.inheritance.Car;
+import uk.sky.kata.fundamentals.inheritance.ManualCar;
+import uk.sky.kata.fundamentals.polymorphism.Calculator;
 
 public class Main {
 
