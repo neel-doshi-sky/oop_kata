@@ -1,6 +1,12 @@
 package uk.sky.kata.exampleProject.response;
 
+/**
+ * Simple response class that returns error messages if there is any or a message, this is good to use as a base as all responses need
+ * to return errors or messages
+ */
+
 public class ResponseBase {
+
   private String errors;
   private String messages;
 

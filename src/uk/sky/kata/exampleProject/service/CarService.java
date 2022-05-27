@@ -9,8 +9,9 @@ import uk.sky.kata.exampleProject.response.ResponseBase;
 
 /**
  * This is an example of abstraction
- * This creates a contract with the class that implements this, so that all the methods below need to be
- * implemented otherwise it will error
+ * This creates a contract with the class that implements this, that all the methods below need to be
+ * implemented otherwise it will error and not compile, also this is readable code to show what a method will do and return
+ * without giving away the implementation - also allows different versions of the same method in the event things change
  */
 public interface CarService {
 

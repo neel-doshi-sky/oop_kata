@@ -5,7 +5,7 @@ import java.util.List;
 import uk.sky.kata.exampleProject.model.Car;
 
 /**
- * As this class extends ResponseBase, it inherits all the methods and properties and has access to it as well
+ * As this class extends ResponseBase, it inherits all the methods and properties and has access to it as well via getters and setters if they have been defined
  */
 public class CreateMultipleResponse extends ResponseBase {
 
@@ -22,7 +22,6 @@ public class CreateMultipleResponse extends ResponseBase {
   /**
    * By calling 'super', we refer to the parent class and execute the code in the original class
    * So here, we call the toString method from ResponseBase and then add what we need at the end
-   * @return
    */
   @Override
   public String toString() {
