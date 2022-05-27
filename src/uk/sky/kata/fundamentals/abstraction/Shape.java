@@ -1,10 +1,11 @@
 package uk.sky.kata.fundamentals.abstraction;
 
-abstract class Shape {
+//by using the keyword abstract, we can create an abstract class
+public abstract class Shape {
 
   String color;
 
-  // these are abstract methods
+  // this is an abstract method
   public abstract double area();
 
   public void randomMethod(){

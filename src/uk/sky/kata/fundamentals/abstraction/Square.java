@@ -1,8 +1,8 @@
 package uk.sky.kata.fundamentals.abstraction;
 
+
 /**
  * This method extends the abstract class and therefore has to fulfil the contract by implementing the abstract methods
- * Note:
  */
 public class Square extends Shape {
 

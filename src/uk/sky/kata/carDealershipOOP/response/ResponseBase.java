@@ -1,5 +1,8 @@
 package uk.sky.kata.carDealershipOOP.response;
 
+/**
+ * This class represents the basics of a response object, all responses need to contain either an error or success message
+ */
 public class ResponseBase {
 
   private String errors;

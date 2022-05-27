@@ -17,6 +17,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Encapsulation
+
         //No Encapsulation example, notice how without encapsulation, we have access to everything in this class and make changes to what we want, we are not restricted
         EmployeeWithoutEncapsulation employeeWithoutEncapsulation =
             new EmployeeWithoutEncapsulation("Neel", "Doshi", 100000D, "123A", 2);
