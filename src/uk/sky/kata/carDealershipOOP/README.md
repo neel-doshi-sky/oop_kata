@@ -1,6 +1,6 @@
-OOP Fundamentals Task
+**OOP Fundamentals Task**
 
-Objective: Create an application that can perform actions on a car 'database' using the OOP fundamentals we have just learnt!
+**Objective: Create an application that can perform actions on a car 'database' using the OOP fundamentals we have just learnt!**
 
 The actions that need to be performed are stated below:
 1) create - add a car to the 'database'
@@ -33,11 +33,11 @@ All responses from create, delete and list need to return errors and messages so
 
 When we perform the create functionality, we want to return a message to say 'your car has been created' as well as the car itself or an error if it went wrong.
 The ResponseBase class already covers messages and errors, and we do not want to repeat this code.
-1) Using inheritance, can you create a class that has access to errors and messages as well as containing a Car property? Please call this file **CreateResponse**
+1) Using inheritance, can you create a class that has access to errors and messages as well as containing a Car property? Please call this class **CreateResponse**
 
 Once you have done that, we must do the same for the get cars functionality, 
 
-2) Can you create a class that has access to errors and messages but also contains a list of cars to return to the user, please call this file **ListResponse**
+2) Can you create a class that has access to errors and messages but also contains a list of cars to return to the user, please call this class **ListResponse**
 
 **Task 3:**
 

@@ -1,8 +1,8 @@
-package uk.sky.kata.exampleProject;
+package uk.sky.kata.carDealershipOOP;
 
 import java.util.ArrayList;
 import java.util.List;
-import uk.sky.kata.exampleProject.model.Car;
+import uk.sky.kata.carDealershipOOP.model.Car;
 
 
 public class CarDealershipApp {

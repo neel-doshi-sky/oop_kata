@@ -1,4 +1,4 @@
-package uk.sky.kata.inheritance;
+package uk.sky.kata.fundamentals.inheritance;
 
 public class AutomaticCar extends Car{
   private String mode;

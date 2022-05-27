@@ -1,4 +1,4 @@
-package uk.sky.kata.polymorphism;
+package uk.sky.kata.fundamentals.polymorphism;
 
 public class Calculator {
 

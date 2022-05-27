@@ -1,4 +1,4 @@
-package uk.sky.kata.exampleProject.response;
+package uk.sky.kata.carDealershipOOP.response;
 
 public class ResponseBase {
 

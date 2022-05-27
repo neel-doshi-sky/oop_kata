@@ -1,4 +1,4 @@
-package uk.sky.kata.abstraction;
+package uk.sky.kata.fundamentals.abstraction;
 
 /**
  * This method extends the abstract class and therefore has to fulfil the contract by implementing the abstract methods

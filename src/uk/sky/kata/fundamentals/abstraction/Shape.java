@@ -1,4 +1,4 @@
-package uk.sky.kata.abstraction;
+package uk.sky.kata.fundamentals.abstraction;
 
 abstract class Shape {
 

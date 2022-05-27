@@ -1,4 +1,4 @@
-package uk.sky.kata.exampleProject.model;
+package uk.sky.kata.carDealershipOOP.model;
 
 public class Car {
 

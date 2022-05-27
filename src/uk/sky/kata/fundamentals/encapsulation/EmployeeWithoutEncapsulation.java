@@ -1,4 +1,4 @@
-package uk.sky.kata.encapsulation;
+package uk.sky.kata.fundamentals.encapsulation;
 
 public class EmployeeWithoutEncapsulation {
 
