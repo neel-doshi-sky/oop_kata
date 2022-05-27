@@ -2,8 +2,8 @@ package uk.sky.kata.exampleProject.service;
 
 import java.util.List;
 import uk.sky.kata.exampleProject.model.Car;
-import uk.sky.kata.exampleProject.response.CreateUpdateMultipleResponse;
-import uk.sky.kata.exampleProject.response.CreateUpdateResponse;
+import uk.sky.kata.exampleProject.response.CreateMultipleResponse;
+import uk.sky.kata.exampleProject.response.CreateResponse;
 import uk.sky.kata.exampleProject.response.ListResponse;
 import uk.sky.kata.exampleProject.response.ResponseBase;
 
@@ -14,12 +14,12 @@ import uk.sky.kata.exampleProject.response.ResponseBase;
  */
 public interface CarService {
 
-  CreateUpdateResponse create(Car car, List<Car> carList);
+  CreateResponse create(Car car, List<Car> carList);
 
   /**
    * Notice how this method has the same name as the one above it? This is polymorphism! We have the same method essentially that behaves differently to different situations
    */
-  CreateUpdateMultipleResponse create(List<Car> carsToAdd, List<Car> carList);
+  CreateMultipleResponse create(List<Car> carsToAdd, List<Car> carList);
 
   ResponseBase delete(Car car, List<Car> carList);
 

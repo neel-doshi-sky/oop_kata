@@ -2,8 +2,8 @@ package uk.sky.kata.exampleProject.service.impl;
 
 import java.util.List;
 import uk.sky.kata.exampleProject.model.Car;
-import uk.sky.kata.exampleProject.response.CreateUpdateMultipleResponse;
-import uk.sky.kata.exampleProject.response.CreateUpdateResponse;
+import uk.sky.kata.exampleProject.response.CreateMultipleResponse;
+import uk.sky.kata.exampleProject.response.CreateResponse;
 import uk.sky.kata.exampleProject.response.ListResponse;
 import uk.sky.kata.exampleProject.response.ResponseBase;
 import uk.sky.kata.exampleProject.service.CarService;
@@ -15,19 +15,19 @@ import uk.sky.kata.exampleProject.service.CarService;
 public class CarServiceImpl implements CarService {
 
   @Override
-  public CreateUpdateResponse create(Car car, List<Car> carList) {
+  public CreateResponse create(Car car, List<Car> carList) {
     carList.add(car);
-    CreateUpdateResponse response = new CreateUpdateResponse();
+    CreateResponse response = new CreateResponse();
     response.setCreatedCar(car);
-    //Notice that because CreateUpdateResponse extends BaseResponse, we have access to messages and errors, and we can assign them here as needed
+    //Notice that because CreateResponse extends BaseResponse, we have access to messages and errors, and we can assign them here as needed
     response.setMessages("Created car");
     return response;
   }
 
   @Override
-  public CreateUpdateMultipleResponse create(List<Car> carsToAdd, List<Car> carList) {
+  public CreateMultipleResponse create(List<Car> carsToAdd, List<Car> carList) {
     carList.addAll(carsToAdd);
-    CreateUpdateMultipleResponse response = new CreateUpdateMultipleResponse();
+    CreateMultipleResponse response = new CreateMultipleResponse();
     response.setCarsUpdatedList(carsToAdd);
     response.setMessages("Created cars");
     return response;
