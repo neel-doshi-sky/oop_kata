@@ -1,4 +1,4 @@
-package uk.sky.kata.abstraction.intefaces;
+package uk.sky.kata.abstraction.interfaces;
 
 /**
  * An interface lets us define what a class should behave like without showing the unnecessary information, this creates a contract so the class that this implements must

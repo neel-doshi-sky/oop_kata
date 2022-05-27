@@ -31,7 +31,7 @@ Lets check out inheritance!
 Inside the response folder, you will see a file called ResponseBase.java, this class contains 2 properties, errors and messages.
 All responses from create, delete and list need to return errors and messages so this is a good base file to use.
 
-When we perform the create functionality, we want to send back to user a message to say 'your car has been created' as well as the car that they created or an error if it went wrong.
+When we perform the create functionality, we want to return a message to say 'your car has been created' as well as the car itself or an error if it went wrong.
 The ResponseBase class already covers messages and errors, and we do not want to repeat this code.
 1) Using inheritance, can you create a class that has access to errors and messages as well as containing a Car property? Please call this file **CreateResponse**
 
@@ -47,15 +47,15 @@ inside the service folder, create an **_interface_** called **CarService**, in h
 without actually implementing it!
 
 1) Once your interface is created, please write a method called `create` that will create a car, the spec can be seen here:
- - `this method needs to return a type of **CreateResponse** that you created earlier`
+ - `this method needs to return a type of CreateResponse that you created earlier`
  - `must take 2 parameters, a Car object and the car database which is of type List<Car>`
  
 Remember as this is an interface, and we are doing abstraction, so don't actually write the implementation!
 2) Now create another method that will list all the cars in the database called '`getCars`', the spec is below:
-- `this method needs to return a type of **ListResponse** that you created earlier`
+- `this method needs to return a type of ListResponse that you created earlier`
 - `must take 1 parameter, the car database which is of type List<Car>`
 3) Now create another method that will delete a car from the database, the spec is below:
-- `this method needs to return a type of **ResponseBase**`
+- `this method needs to return a type of ResponseBase`
 - `must take 2 parameters, a Car object and the car database which is of type List<Car>`
 
 Once these methods have been abstracted, please create a new file inside the service->impl folder called CarServiceImpl
@@ -65,14 +65,14 @@ In here, once you have implemented all your methods, lets write the logic for th
 5) For the list, return an ListResponse object containing all the cars in the database with a success message
 6) For delete, loop through the cars and delete the car from the list, return a ResponseBase object with a success message
 
-**Task 3:**
+**Task 4:**
 
 Last one I promise! Polymorphism time!
 
 Now lets say I wanted to add multiple cars to the database but I still want my create method to be called the same thing...
 Create a new Response object called CreateMultipleResponse, instead of having a single Car property, this needs to have a List<Car> property
-1) Create another method called `create` in your interface but this time it needs to take a list of cars instead of just 11
-2) Implement this method in your impl file - add the list of cars provided to your car database(list) and return a success message
+1) Create another method called `create` in your interface but this time it needs to take a list of cars instead of just 1
+2) Implement this method in your impl file - add the list of cars provided to your car database and return a success message
 3) Create another method called `delete`in your interface but this time instead of taking a car object, take a String id parameter instead
 4) Implement this method in your impl file - loop through the car database and delete the car with the id provided
 
