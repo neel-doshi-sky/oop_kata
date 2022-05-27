@@ -8,6 +8,7 @@ import uk.sky.kata.exampleProject.model.Car;
  * As this class extends ResponseBase, it inherits all the methods and properties and has access to it as well
  */
 public class ListResponse extends ResponseBase{
+
   private List<Car> carList = new ArrayList<>();
 
   public List<Car> getCarList() {

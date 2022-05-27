@@ -1,4 +1,4 @@
-package uk.sky.kata.abstraction.intefaces;
+package uk.sky.kata.abstraction.interfaces;
 
 public class NewBankService implements IBank{
   @Override

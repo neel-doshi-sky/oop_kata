@@ -2,12 +2,11 @@ package uk.sky.kata;
 
 import uk.sky.kata.abstraction.Circle;
 import uk.sky.kata.abstraction.Square;
-import uk.sky.kata.abstraction.intefaces.BankAccountService;
-import uk.sky.kata.abstraction.intefaces.BankService;
-import uk.sky.kata.abstraction.intefaces.NewBankService;
+import uk.sky.kata.abstraction.interfaces.BankAccountService;
+import uk.sky.kata.abstraction.interfaces.BankService;
+import uk.sky.kata.abstraction.interfaces.NewBankService;
 import uk.sky.kata.encapsulation.EmployeeEncapsulated;
 import uk.sky.kata.encapsulation.EmployeeWithoutEncapsulation;
-import uk.sky.kata.exampleProject.CarDealershipApp;
 import uk.sky.kata.inheritance.AutomaticCar;
 import uk.sky.kata.inheritance.Car;
 import uk.sky.kata.inheritance.ManualCar;
