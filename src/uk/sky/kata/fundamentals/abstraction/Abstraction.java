@@ -2,7 +2,7 @@ package uk.sky.kata.fundamentals.abstraction;
 
 import uk.sky.kata.fundamentals.abstraction.abstractClass.Circle;
 import uk.sky.kata.fundamentals.abstraction.abstractClass.Square;
-import uk.sky.kata.fundamentals.abstraction.interfaces.BankAccountServiceInterfaceInterface;
+import uk.sky.kata.fundamentals.abstraction.interfaces.BankAccountService;
 import uk.sky.kata.fundamentals.abstraction.interfaces.BankService;
 import uk.sky.kata.fundamentals.abstraction.interfaces.NewBankService;
 
@@ -27,8 +27,8 @@ public class Abstraction {
     NewBankService newBankService = new NewBankService();
     newBankService.deposit();
     // This service implements 2 different interfaces and therefore must be able to do a combination of both interfaces which is a great way to do multiple inheritance
-    BankAccountServiceInterfaceInterface
-        bankAccountService = new BankAccountServiceInterfaceInterface();
+    BankAccountService
+        bankAccountService = new BankAccountService();
     bankAccountService.openAccount();
     bankAccountService.deposit();
 
