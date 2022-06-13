@@ -1,4 +1,4 @@
-package uk.sky.kata.fundamentals.abstraction;
+package uk.sky.kata.fundamentals.abstraction.abstractClass;
 
 //by using the keyword abstract, we can create an abstract class
 public abstract class Shape {

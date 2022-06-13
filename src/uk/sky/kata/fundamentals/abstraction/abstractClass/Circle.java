@@ -1,4 +1,4 @@
-package uk.sky.kata.fundamentals.abstraction;
+package uk.sky.kata.fundamentals.abstraction.abstractClass;
 
 public class Circle extends Shape {
   int radius;

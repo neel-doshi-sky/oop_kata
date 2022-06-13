@@ -17,11 +17,5 @@ public class EmployeeWithoutEncapsulation {
     this.band = band;
   }
 
-  void promoteEmployee(){
-    int original = band;
-    band++;
-    System.out.println("Promoted employee from band: " + original + " to: " + band);
-  }
-
 
 }
