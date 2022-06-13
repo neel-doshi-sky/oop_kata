@@ -1,6 +1,6 @@
 package uk.sky.kata.fundamentals.abstraction.interfaces;
 
-public interface IBankSystem {
+public interface BankSystemInterface {
 
   void openAccount();
 

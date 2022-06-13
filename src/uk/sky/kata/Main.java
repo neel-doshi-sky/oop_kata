@@ -1,7 +1,7 @@
 package uk.sky.kata;
 
 import uk.sky.kata.fundamentals.abstraction.Circle;
-import uk.sky.kata.fundamentals.abstraction.Square;
+import uk.sky.kata.fundamentals.abstraction.abstractClass.Square;
 import uk.sky.kata.fundamentals.abstraction.interfaces.BankAccountService;
 import uk.sky.kata.fundamentals.abstraction.interfaces.BankService;
 import uk.sky.kata.fundamentals.abstraction.interfaces.NewBankService;

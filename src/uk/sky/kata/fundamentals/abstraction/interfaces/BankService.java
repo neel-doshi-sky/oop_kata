@@ -1,6 +1,6 @@
 package uk.sky.kata.fundamentals.abstraction.interfaces;
 
-public class BankService implements IBank{
+public class BankService implements BankInterface {
   @Override
   public void deposit() {
     System.out.println("Depositing money");

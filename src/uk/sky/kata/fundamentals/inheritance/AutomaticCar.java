@@ -1,6 +1,9 @@
 package uk.sky.kata.fundamentals.inheritance;
 
-public class AutomaticCar extends Car{
+/**
+ * This method extends Car therefore has access to all properties and methods within the Car class, but also can add its own
+ */
+public class AutomaticCar extends Car {
   private String mode;
   private boolean brakePressed;
 
@@ -12,17 +15,17 @@ public class AutomaticCar extends Car{
 
   @Override
   public void accelerateForward() {
-    if(mode.equals("D")) {
+    if (mode.equals("D")) {
       super.accelerateForward();
-    } else if(mode.equals("N")){
+    } else if (mode.equals("N")) {
       System.out.println("You are in neutral!");
-    } else if (mode.equals("R")){
+    } else if (mode.equals("R")) {
       System.out.println("You are in reverse!");
     }
   }
 
-  public void changeMode(String modeToChangeTo){
-    if(brakePressed) {
+  public void changeMode(String modeToChangeTo) {
+    if (brakePressed) {
       mode = modeToChangeTo;
       System.out.println("Shifted to: " + mode);
     } else {

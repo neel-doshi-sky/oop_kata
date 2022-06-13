@@ -1,6 +1,8 @@
 package uk.sky.kata.fundamentals.inheritance;
 
-public class ManualCar extends Car{
+/**
+ * This method extends Car therefore has access to all properties and methods within the Car class, but also can add its own
+ */public class ManualCar extends Car{
 
   private int gear = 0;
 

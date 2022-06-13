@@ -6,30 +6,6 @@ public class Car {
   private String make;
   private String model;
 
-  public void startEngine(){
-    System.out.println("Starting engine");
-  }
-
-  public void accelerateForward(){
-    System.out.println("Moving forward");
-  }
-
-  public void brake(){
-    System.out.println("Braking");
-  }
-
-  public void reverse(){
-    System.out.println("Reversing");
-  }
-
-  public void steerLeft(){
-    System.out.println("Steering left");
-  }
-
-  public void steerRight(){
-    System.out.println("Steering right");
-  }
-
   public String getMake() {
     return make;
   }
@@ -52,5 +28,29 @@ public class Car {
 
   public void setBrand(String brand) {
     this.brand = brand;
+  }
+
+  public void startEngine(){
+    System.out.println("Starting engine");
+  }
+
+  public void accelerateForward(){
+    System.out.println("Moving forward");
+  }
+
+  public void brake(){
+    System.out.println("Braking");
+  }
+
+  public void reverse(){
+    System.out.println("Reversing");
+  }
+
+  public void steerLeft(){
+    System.out.println("Steering left");
+  }
+
+  public void steerRight(){
+    System.out.println("Steering right");
   }
 }
