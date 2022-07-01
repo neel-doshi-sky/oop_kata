@@ -1,8 +1,11 @@
 package uk.sky.kata.fundamentals.abstraction.abstractClass;
 
 
+import java.util.jar.JarEntry;
+
 /**
- * This method extends the abstract class and therefore has to fulfil the contract by implementing the abstract methods
+ * This method extends the abstract class and therefore has to fulfil the contract by implementing the abstract methods,
+ * The limitation here, is that we cannot extend multiple classes
  */
 public class Square extends Shape {
 

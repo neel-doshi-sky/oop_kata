@@ -1,5 +1,8 @@
 package uk.sky.kata.fundamentals.abstraction.interfaces;
 
+/**
+ * We can implement multiple interfaces and have to fulfil both implementations
+ */
 public class BankAccountService implements BankInterface, BankSystemInterface {
   @Override
   public void deposit() {

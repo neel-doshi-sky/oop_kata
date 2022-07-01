@@ -19,6 +19,7 @@ public class Inheritance {
     System.out.println(manualCar.isClutchDown());
     manualCar.toggleClutch();
     System.out.println(manualCar.isClutchDown());
+    manualCar.moveUpAGear();
 
     //This also extends Car so can do everything a car does, however overrides some methods and adds new ones specific to automatic cars
     AutomaticCar automaticCar = new AutomaticCar();
@@ -26,6 +27,7 @@ public class Inheritance {
     automaticCar.startEngine();
     automaticCar.setBrakePressed(true);
     automaticCar.changeMode("D");
+    automaticCar.accelerateForward();
 
 
 

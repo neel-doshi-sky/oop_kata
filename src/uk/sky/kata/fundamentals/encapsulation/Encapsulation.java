@@ -21,7 +21,7 @@ public class Encapsulation {
     //System.out.println(employeeEncapsulated.salary);
 
     System.out.println(employeeEncapsulated.getSalary());
-    //We have not allowed the user to modify salry or id so either attempts would not work!
+    //We have not allowed the user to modify salary or id so either attempts would not work!
 //        employeeEncapsulated.setSalary(50000d);
 //    employeeEncapsulated.salary = 4000d;
   }
