@@ -10,15 +10,15 @@ public class CarDealershipApp {
   public static void main(String[] args) {
 
 
-    //comment the below out once tasks are done to import your CarService, notice here we can create a new object using the Impl but can create a type of CarService
-    //CarService carService = new CarServiceImpl();
-
     //This will be our car database - empty list of cars
     List<Car> carList = new ArrayList<>();
 
     System.out.println("OOP Example App");
 
     //Comment below code out to see if your code does what it needs to!
+
+    //notice here we can create a new object using the Impl but can create a type of CarService
+//    CarService carService = new CarServiceImpl();
 
 
 //        Car car = new Car("Mercedes", "C class");
