@@ -66,8 +66,11 @@ Now create a folder inside service called impl, this will house the implementati
 Once these methods have been abstracted, please create a new file inside the service->impl folder called CarServiceImpl
 and using what you have learnt, implement your car service interface! This is where you will write the logic for the methods you wrote earlier!
 In here, once you have implemented all your methods using the intellij shortcut, lets write the logic for them:
+
 4) For the create method, add the car to the database, and return an CreateResponse object containing the car, and a success message
+
 5) For the list, return an ListResponse object containing all the cars in the database with a success message
+
 6) For delete, loop through the cars and delete the car from the list, return a ResponseBase object with a success message
 
 **Task 4:**
@@ -76,9 +79,13 @@ Last one I promise! Polymorphism time!
 
 Now lets say I wanted to add multiple cars to the database, but I still want my create method to be called the same thing...
 Create a new Response object called CreateMultipleResponse, instead of having a single Car to return, this needs to return List<Car>
+
 1) Create another method called `create` in your interface but this time it needs to take a list of cars instead of just 1
+
 2) Implement this method in your impl file - add the list of cars provided to your car database and return a success message
+
 3) Create another method called `delete`in your interface but this time instead of taking a car object, take a String id parameter instead
+
 4) Implement this method in your impl file - loop through the car database and delete the car with the id provided
 
 **Well done!**
