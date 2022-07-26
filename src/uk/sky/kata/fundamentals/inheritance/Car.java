@@ -6,6 +6,9 @@ public class Car {
   private String make;
   private String model;
 
+  public Car() {
+  }
+
   public String getMake() {
     return make;
   }
