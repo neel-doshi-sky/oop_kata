@@ -29,6 +29,10 @@ public class Inheritance {
     automaticCar.changeMode("D");
     automaticCar.accelerateForward();
 
+    automaticCar.startEngine();
+    manualCar.startEngine();
+    car.startEngine();
+
 
 
   }

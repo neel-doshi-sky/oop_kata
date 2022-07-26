@@ -5,9 +5,8 @@ public class Encapsulation {
     //Without Encapsulation example, notice how without encapsulation, we have access to everything in this class and make changes to what we want, we are not restricted
     EmployeeWithoutEncapsulation employeeWithoutEncapsulation =
         new EmployeeWithoutEncapsulation("Neel", "Doshi", 100000D, "123A", 2);
-    System.out.println(employeeWithoutEncapsulation.salary);
-    employeeWithoutEncapsulation.salary = 500000d;
-    System.out.println(employeeWithoutEncapsulation.salary);
+
+    employeeWithoutEncapsulation.salary = 1000d;
 
     /**
      * Encapsulated example
